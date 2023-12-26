@@ -9,6 +9,14 @@ import com.example.consumerestapi.repository.KontakRepository
 
 class InsertViewModel(private val kontakRepository: KontakRepository) : ViewModel(){
 
+    var insertKontakState by mutableStateOf(InsertUiState())
+        private set
+
+    fun updateInsertKontakState(insertUiEvent: InsertUiEvent){
+        insertKontakState = InsertUiState(insertUiEvent = insertUiEvent)
+    }
+
+
     data class InsertUiState(
         val insertUiEvent: InsertUiEvent = InsertUiEvent(),
     )
@@ -25,5 +33,15 @@ class InsertViewModel(private val kontakRepository: KontakRepository) : ViewMode
         nama = nama,
         email = email,
         nohp = nohp,
+    )
+
+    fun Kontak.toUiStateKontak(): InsertUiState = InsertUiState(
+        insertUiEvent = toInsertUiEvent(),
+    )
+    fun Kontak.toInsertUiEvent(): InsertUiEvent = InsertUiEvent(
+        id = id,
+        nama = nama,
+        email = email,
+        nohp = nohp
     )
 }
