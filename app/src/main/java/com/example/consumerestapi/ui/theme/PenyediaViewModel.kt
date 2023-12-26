@@ -1,10 +1,10 @@
-package com.example.consumerestapi.ui.theme.theme
+package com.example.consumerestapi.ui.theme
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.consumerestapi.KontakAplication
-import com.example.consumerestapi.ui.theme.home.viewmodel.HomeViewModel
+import com.example.consumerestapi.ui.home.viewmodel.HomeViewModel
 
 object PenyediaViewModel {
     val Factory = viewModelFactory {

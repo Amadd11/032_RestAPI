@@ -1,4 +1,4 @@
-package com.example.consumerestapi.ui.theme.theme
+package com.example.consumerestapi.ui.theme
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -20,8 +20,8 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.consumerestapi.R
-import com.example.consumerestapi.ui.theme.home.screen.HomeScreen
-import com.example.consumerestapi.ui.theme.home.viewmodel.HomeViewModel
+import com.example.consumerestapi.ui.home.screen.HomeScreen
+import com.example.consumerestapi.ui.home.viewmodel.HomeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,4 +1,4 @@
-package com.example.consumerestapi.ui.theme.home.screen
+package com.example.consumerestapi.ui.home.screen
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -15,9 +15,9 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.consumerestapi.navigation.DestinasiNavigasi
-import com.example.consumerestapi.ui.theme.home.viewmodel.HomeViewModel
-import com.example.consumerestapi.ui.theme.theme.PenyediaViewModel
-import com.example.consumerestapi.ui.theme.theme.TopAppBarKontak
+import com.example.consumerestapi.ui.home.viewmodel.HomeViewModel
+import com.example.consumerestapi.ui.theme.PenyediaViewModel
+import com.example.consumerestapi.ui.theme.TopAppBarKontak
 
 object DestinasiHome : DestinasiNavigasi{
     override val route = "home"

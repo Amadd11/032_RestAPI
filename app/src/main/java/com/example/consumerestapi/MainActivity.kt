@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.consumerestapi.ui.theme.ConsumeRestAPITheme
-import com.example.consumerestapi.ui.theme.theme.KontakApp
+import com.example.consumerestapi.ui.theme.KontakApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
